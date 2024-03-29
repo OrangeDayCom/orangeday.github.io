@@ -625,3 +625,5 @@ button.obtn,
 	padding: 10px; border-radius: 6px;
 	font-size:11px;
 }
+.powered { width:100%; text-align:center}
+.powered a { display:inline-block; padding:5px 10px; margin:10px 0; font-size:8px; box-shadow:var(--oday_listShadowStress); border:var(--oday_btnBorder); border-radius: 6px;}

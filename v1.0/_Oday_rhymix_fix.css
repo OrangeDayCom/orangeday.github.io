@@ -61,11 +61,12 @@
 
 
 
-.nav.nav-tabs { display:flex; justify-content: center; align-items: flex-end; height:100px; background:linear-gradient(var(--oday_bodyBgColor), rgba(0,0,0,.2) 100px); font-size:12px; }
-.nav.nav-tabs li { border:var(--oday_listBorder); border-bottom:none; background-color:var(--oday_bodyBgColor); display:flex; align-items: center; height:30px; padding:0 10px; border-radius:5px 5px 0 0; opacity:.5}
-.nav.nav-tabs li.active { opacity:1; height:40px; padding:0 20px;}
-.nav.nav-tabs li.active a {color:var(--oday_fontHoverColor); font-weight:500;  }
-.nav.nav-tabs li + li { margin-left:5px;}
+.nav.nav-tabs { display:flex; justify-content: center; align-items: flex-start; /*  background:linear-gradient(var(--oday_bodyBgColor), rgba(0,0,0,.2) 100px); */ font-size:12px; position: sticky; top: 0px;     background-color: var(--oday_bodyBgColor);
+    box-shadow: 0 0 10px 10px var(--oday_bodyBgColor); padding-bottom:10px }
+.nav.nav-tabs li { border:var(--oday_listBorder); border-top:none; background-color:var(--oday_bodyBgColor); display:flex; align-items: center; height:38px; padding:0 10px; border-radius:0 0 5px 5px; }
+.nav.nav-tabs li.active {  border-color:var(--oday_mainColor)}
+.nav.nav-tabs li.active a {color:var(--oday_mainColor); font-weight:500;  }
+.nav.nav-tabs li + li { margin-left:2px;}
 
 
 .termtitle { font-size:1.2em; font-weight:500; padding:20px 0 10px 0 }
@@ -80,7 +81,7 @@
 .minfo .xbtn.big {height:40px; font-size:14px; padding:0 25px;  }
 .minfo #profile_imagetag button,
 .minfo .xbtn.small { height:25px; font-size:12px; padding:0 10px; }
-.minfo .xbtn:hover { color:var(--oday_fontHoverColor) }
+.minfo .xbtn:hover { color:var(--oday_mainColor) }
 
 .minfo h1 { text-align:center; margin:2em 0; color:var(--oday_mainColor) }
 .minfo select { height: }
@@ -140,7 +141,7 @@ table.mtbl.list tr td.messageview { text-align:left; padding:30px 0;}
 
 .subtab li { opacity:.4}
 .subtab .active { opacity:1}
-.subtab .active a { color:var(--oday_fontHoverColor)}
+.subtab .active a { color:var(--oday_mainColor)}
 
 .btnArea.btn-group { display:flex; justify-content: center; align-items: flex-end; padding-top:30px; }
 .btnArea.btn-group a.xbtn + a { margin-left:5px;}
@@ -151,7 +152,7 @@ table.mtbl.list tr td.messageview { text-align:left; padding:30px 0;}
 .bd_bottom > * + * {margin-left:10px;}
 
 .bd_bottom.pagination { margin-top:2em; font-size:1.2em}
-.bd_bottom.pagination .active a { font-weight:700; color:var(--oday_fontHoverColor)}
+.bd_bottom.pagination .active a { font-weight:700; color:var(--oday_mainColor)}
 
 .bd_con_out { display:flex; flex-direction: column; justify-content: center;width:100%; min-height:100vh}
 .bd_con_out > div {margin:0 auto; width:100%; max-width:500px; display:flex; flex-direction: column; align-items: center; text-align:center; padding:20px 50px; background-color:var(--oday_bodyBgColor); border-radius:var(--oday_listBorderRadius); border:var(--oday_listBorder); box-shadow:var(--oday_listShadow)}
@@ -162,7 +163,6 @@ table.mtbl.list tr td.messageview { text-align:left; padding:30px 0;}
 .bd_con_out p {line-height:1.4; }
 .bd_con_out input:not([type="submit"]) { width:100%;}
 
-.xm { padding-bottom:100px;}
 .x { background-color:#fff}
 .llllllll { padding:50px; margin:0 auto; width:100%; min-height:100vh}
 .x input[type=color], .x input[type=date], .x input[type=datetime-local], .x input[type=datetime], .x input[type=email], .x input[type=month], .x input[type=number], .x input[type=password], .x input[type=search], .x input[type=tel], .x input[type=text], .x input[type=time], .x input[type=url], .x input[type=week] {height: 34px !important; min-width:50px;}
