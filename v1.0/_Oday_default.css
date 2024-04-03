@@ -441,7 +441,7 @@ a:focus { text-decoration:none; cursor:pointer; color:var(--oday_mainColor); }
 	height: var(--oday_iptHeight) !important;
 	background-color: var(--oday_iptBgColor);     
 }
-:is(.od-bord) input[type='checkbox'] { height:unset !important; display: inline-block !important;}
+:is(.od-bord) input[type='checkbox'] { height:unset !important; display: inline-block;}
 .obtn, 
 :is(.od-bord) .nice-select,
 :is(.od-bord, #fo_write) input, 
