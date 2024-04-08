@@ -131,7 +131,7 @@
 	--oday_metaBgColor:#eaeaea ;
 	--oday_metaIconSize:36px;
 	--oday_metaFontSize:calc(var(--oday_metaIconSize) / 2);
-	--oday_metaIconSize2:40px;
+	--oday_metaIconSize2:50px;
 	--oday_metaFontSize2:calc(var(--oday_metaIconSize2) / 2);
 
 	--oday_colorAuthor:var(--oday_fontLinkColor);
@@ -166,8 +166,8 @@
 		--oday_gnbHeight:50px;
 
 		--oday_maxWidth:calc(100vw - 10px);
-		--oday_sideGap:1em;
-		--oday_sideGapLR:0 1em;
+		--oday_sideGap:1.5em;
+		--oday_sideGapLR:0 1.5em;
 		--oday_readRadius: 10px;
 		--oday_listShadow:1px 1px 5px 0px rgba(0,0,0,.1);
 		
